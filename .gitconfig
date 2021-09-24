@@ -1,0 +1,14 @@
+[alias]
+  unstage=reset HEAD
+  last=log -1 HEAD
+  st=status
+  ci=commit
+  co=checkout
+  br=branch
+  head=!git log -n1
+  diffs=diff --cached
+  undolast=reset --soft HEAD~
+
+  # my color and formating...
+  lg=log --graph --pretty=format:'%C(red)%h%C(reset) -%C(yellow)%d%C(reset) %s %C(green)(%cr)%C(reset) %C(cyan)- %an%C(reset)' --abbrev-commit --date=relative
+  lga=log --graph --pretty=format:'%C(red)%h%C(reset) -%C(yellow)%d%C(reset) %s %C(green)(%cr)%C(reset) %C(cyan)- %an%C(reset)' --abbrev-commit --date=relative --all
